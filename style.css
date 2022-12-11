@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgba(211, 214, 214, 0.774);
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-text {
+    font-size: 30px;
+}
+
+.money-header {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.money-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.money-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ingresos-box {
+    border-right: black 2px solid;
+}
+
+.historial-header {
+    border-bottom: 2px rgb(120, 120, 120) solid;
+}
+
+.historial-item {
+    margin-top: 8px;
+    display: flex;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.item-gasto {
+    border-right: 5px red solid;
+}
+
+.item-ingreso {
+    border-right: 5px green solid;
+}
+
+.gastos-box,
+.ingresos-box {
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow:
+        0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.money-summary {
+    width: 300px;
+}
+
+.money {
+    padding-top: 10px;
+}
+
+.transaccion-header {
+    border-bottom: 2px rgb(120, 120, 120) solid;
+}
+
+.transaction-box {
+    margin-top: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 185px;
+}
+
+.cantidad-trans {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 300px;
+}
+
+.concepto-trans {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.footer-form {
+    margin-top: 15px;
+    width: 300px;
+}

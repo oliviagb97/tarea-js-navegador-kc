@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ahorros</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="container-header">
+            <div class="header-text">Control de gastos</div>
+        </div>
+        <div class="container-body">
+            <div class="money-summary">
+
+                <div class="money-header">
+                    <div class="header-text">Tu Ahorro</div>
+                    <div class="header-money" id="totalAhorro">0.00</div>
+                </div>
+                <div class="money-body">
+                    <div class="money-box">
+                        <div class="ingresos-box">
+                            <div class="box-tittle">Ingresos</div>
+                            <div class="money" id="totalIngreso">0.00</div>
+                        </div>
+
+                        <div class="gastos-box">
+                            <div class="box-tittle">Gastos</div>
+                            <div class="money" id="totalGasto">0.0 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="historial-box">
+                <div class="historial-header">Historial</div>
+                <div class="historial-body" id="historicoBody">
+                </div>
+            </div>
+
+            <div class="transaction-box">
+                <div class="transaccion-header">Añadir nueva transacción</div>
+                <div class="formulario">
+                    <form>
+                        <div class="concepto-trans">
+                            <label for="concepto">Concepto:</label>
+                            <input type="text" id="concepto" name="concepto" required>
+                        </div>
+
+                        <div class="cantidad-trans">
+                            <label for="cantidad">Cantidad:</label>
+                            <div class="info-cant">negativo-gasto, positivo-ingreso</div>
+                            <input type="number" id="cantidad" name="cantidad" required>
+                        </div>
+
+                        <div class="footer-form">
+                            <button type="button" onclick="guardarTrasaccion()">Añadir transacción</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
